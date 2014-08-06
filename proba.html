@@ -2,41 +2,59 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<!--
-	<link rel="stylesheet" href="css/bootstrap.css">
-	-->
 	<link rel="stylesheet" href="menu2.css">
 	<link rel="stylesheet" href="glowna1.css">
-
-	<script type="text/javascript" src="Pokaz_skrypt.js"></script>
-<script type="text/javascript">
-function start(){ var zm; zm=new pokaz_slajdow();
-zm.dodaj_obraz('sdfghjkjbvccvgt3456.jpg'); //dodawanie obrazów
-zm.dodaj_obraz('4a24f6fc8e.jpg');
-zm.dodaj_obraz('a4fr6b.jpg');
-zm.dodaj_obraz('dc76ds98gyud.jpg');
-zm.czas_wyswietl = 4000;
-zm.czasy_przejsc(1000, 25)
-zm.pokaz('glowny_div');
-}
-function start2(){
-var aaa;
-aaa = new pokaz_slajdow();
-aaa.dodaj_obraz('dc76ds98gyud.jpg'));
-aaa.dodaj_obraz('dc76ds98gyud.jpg');
-aaa.dodaj_obraz('4a24f6fc8e.jpg');
-aaa.dodaj_obraz('sdfghjkjbvccvgt3456.jpg');
-aaa.czas_wyswietl = 3000;
-aaa.czasy_przejsc(500,25);
-aaa.pokaz('div2');
-}
-</script>
-
-
+	<link rel="stylesheet" type="text/css" media="screen" href="CSS3-Slider/res/css/style.css"/>
 </head>
 <body>
-<div style="width:600px;height:300px;padding:0px;border:2px solid black;" id="glowny_div"></div>
-<div>To jest tekst pomiędzy pokazami</div>
-<div style="width:550px;height:550px;padding:0px;border:2px solid black;" id="div2"></div>
+    	<div id="slider">
+        	<div id="mask">
+            <ul>
+           	<li id="first" class="firstanimation">
+            <a href="#">
+            <img src="sdfghjkjbvccvgt3456.jpg" />
+            </a>
+            <div class="tooltip">
+            <h1>Cougar</h1> 
+            </div>
+            </li>
+
+            <li id="second" class="secondanimation">
+            <a href="#">
+            <img src="4a24f6fc8e.jpg"/>
+            </a>
+            <div class="tooltip">
+            <h1>Lions</h1>
+            </div>
+            </li>
+            
+            <li id="third" class="thirdanimation">
+            <a href="#">
+            <img src="a4fr6b.jpg"/>
+            </a>
+            <div class="tooltip">
+            <h1>Snowalker</h1>
+            </div>
+            </li>
+                        
+            <li id="fourth" class="fourthanimation">
+            <a href="#">
+            <img src="dc76ds98gyud.jpg"/>
+            </a>
+            <div class="tooltip">
+            <h1>Howling</h1>
+            </div>
+            </li>
+
+            </ul>
+            </div>
+            <div class="progress-bar"></div>
+        </div>
+<!--
+'sdfghjkjbvccvgt3456.jpg')
+'')
+'')
+')
+-->
 </body>
 </html>
