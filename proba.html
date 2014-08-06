@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<!--
+	<link rel="stylesheet" href="css/bootstrap.css">
+	-->
+	<link rel="stylesheet" href="menu2.css">
+	<link rel="stylesheet" href="glowna1.css">
+
+	<script type="text/javascript" src="Pokaz_skrypt.js"></script>
+<script type="text/javascript">
+function start(){ var zm; zm=new pokaz_slajdow();
+zm.dodaj_obraz('sdfghjkjbvccvgt3456.jpg'); //dodawanie obrazów
+zm.dodaj_obraz('4a24f6fc8e.jpg');
+zm.dodaj_obraz('a4fr6b.jpg');
+zm.dodaj_obraz('dc76ds98gyud.jpg');
+zm.czas_wyswietl = 4000;
+zm.czasy_przejsc(1000, 25)
+zm.pokaz('glowny_div');
+}
+function start2(){
+var aaa;
+aaa = new pokaz_slajdow();
+aaa.dodaj_obraz('dc76ds98gyud.jpg'));
+aaa.dodaj_obraz('dc76ds98gyud.jpg');
+aaa.dodaj_obraz('4a24f6fc8e.jpg');
+aaa.dodaj_obraz('sdfghjkjbvccvgt3456.jpg');
+aaa.czas_wyswietl = 3000;
+aaa.czasy_przejsc(500,25);
+aaa.pokaz('div2');
+}
+</script>
+
+
+</head>
+<body>
+<div style="width:600px;height:300px;padding:0px;border:2px solid black;" id="glowny_div"></div>
+<div>To jest tekst pomiędzy pokazami</div>
+<div style="width:550px;height:550px;padding:0px;border:2px solid black;" id="div2"></div>
+</body>
+</html>

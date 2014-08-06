@@ -1,0 +1,37 @@
+body{
+	min-width: 960px;
+	position: fixed;
+	left: 0;
+    right: 0;
+    top: 0;
+}
+.glowna {
+	width: 100%;
+	min-width: 960px;
+	left: 0;
+    right: 0;
+    top: 0;
+	background: url('4a24f6fc8e.jpg')no-repeat fixed 0 0 white;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	min-height: 600px;
+	position: fixed;
+	z-index: -1;
+}
+
+.glass {
+	border:3px solid rgba(145, 68, 103, 0.6);
+	width: 600px;
+	margin:20% 20% ;
+	position: relative;
+	vertical-align: middle;
+	background: rgba(250, 250, 210, 0.6) no-repeat fixed 0 0 ;
+}
+.glass h1,
+.glass p,
+.glass img{
+	margin: 5px;
+	text-align: center;
+}
+/*
+background: url("glassy-ripple.jpg") no-repeat fixed 0 0 white;

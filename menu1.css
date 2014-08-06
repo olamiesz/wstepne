@@ -1,0 +1,97 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+.topmenu {
+	width: 100%;
+}
+#menu {
+	height: 20%;
+	margin-left: 0;
+}
+#menu ul {
+	visibility: hidden;
+	/*odleglosc poniedzy paskami rozwijanymi a menu glownym */
+	padding-top: 0;
+	width: 25%;
+	position: absolute;
+	margin-left: 0;
+}#menu li {
+	list-style: none;
+	/*szerokosc paskow glownych i rozwijanych w menu*/
+	width: 25%;
+	/*ustawienie paskow w jednej lini */
+	float: left;
+}
+#menu a{	
+	border: 10px none Black;
+}
+#menu #main li{
+	width: 100%;
+	list-style: none;
+}
+#menu li:hover ul {
+	visibility: visible;
+}
+#menu a{
+	display: block; 
+	font: 200%/170% verdana, sans-serif; 
+	text-align: center;
+	text-decoration: none; 
+	padding: 0 10px; 
+	color: #fff;
+	border-left: 3px solid Black;
+	border-right: 1px solid Black;
+	border-bottom: 2px solid Black;
+	/*color: #535453;*/ 
+	background-color: #8F0047;
+} 
+#menu a:hover{
+	background-color: #a67381;
+	border-bottom: 1px solid Black;
+	border-top: 1px solid Black;
+	border-left: 2px solid Black;
+	border-right: 2px solid Black;
+}
+
+#menu #main a{
+
+	font: 144%/140% verdana, sans-serif; 
+	text-align: center;
+	text-decoration: none; 
+	color: #fff; 
+	background-color: #a67381;
+	border-left: 1px solid Black;
+	border-right: 2px solid Black;
+}
+#menu #main li{
+	float: none;
+}
+#menu li:hover a, 
+#menu li:hover li:hover a {
+	background-color: #a67381;
+	border-bottom: 1px solid Black;
+	border-top: 1px solid Black;
+	border-left: 1px solid Black;
+	border-right: 2px solid Black;
+}
+#menu #main li:hover a {
+	background-color: #8F0047;
+	border-bottom: 0px solid Black;
+	border-top: 2px solid Black;
+	border-left: 2px solid Black;
+	border-right: 1px solid Black;
+}
+
+/*.topmenu {
+	display: inline;
+}
+ul#topmenu li.topmenu > a {
+    background-color: #5faceb;
+    background-image: linear-gradient(180deg, rgba(44, 160, 202, 0), rgba(0, 0, 0, 0.13));
+    border-color: #5396cd;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 0 0 2px;
+    box-shadow: 0 -1px #5faceb, 0 3px 0 #2a74b1, 0 4px 4px #333333;
+}
