@@ -32,7 +32,7 @@
 	border:5px solid #eaeaea;
 	/*cien ramki */
 	box-shadow:1px 1px 5px rgba(0,0,0,0.7);
-	height: auto;
+	height: 500px;
 	width:99%;
 	margin:0 auto 0;
 	overflow:visible;
@@ -40,7 +40,7 @@
 }
 #mask {
 	overflow:hidden;
-	height:320px;
+	height:500px;
 }
 #slider ul {
 	margin:0;
