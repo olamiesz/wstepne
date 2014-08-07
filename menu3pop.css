@@ -1,0 +1,205 @@
+body{
+	background-color: #bfbfbf;
+	height: 500px;
+}
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, 
+.col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, 
+.col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, 
+.col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, 
+.col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, 
+.col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+    min-height: 1px;
+    position: relative;
+}
+@media (min-width: 992px) {
+.col-md-1, 
+.col-md-2, 
+.col-md-3, 
+.col-md-4, 
+.col-md-5, 
+.col-md-6, 
+.col-md-7,
+.col-md-8, 
+.col-md-9, 
+.col-md-10, 
+.col-md-11, 
+.col-md-12 {
+    float: left;
+}
+.col-md-12 {
+    width: 100%;
+}
+.col-md-11 {
+    width: 91.6667%;
+}
+.col-md-10 {
+    width: 83.3333%;
+}
+.col-md-9 {
+    width: 75%;
+}
+.col-md-8 {
+    width: 66.6667%;
+}
+.col-md-7 {
+    width: 58.3333%;
+}
+.col-md-6 {
+    width: 50%;
+}
+.col-md-5 {
+    width: 41.6667%;
+}
+.col-md-4 {
+    width: 33.3333%;
+}
+.col-md-3 {
+    width: 25%;
+}
+.col-md-2 {
+    width: 16.6667%;
+}
+.col-md-1 {
+    width: 8.33333%;
+}
+}
+.menu_top{
+    box-shadow:15px 13px 10px -5px #6b6b6b;
+}
+.topmenu, 
+.topmenu ul, 
+.topmenu li, 
+.topmenu a{
+	margin: 0;
+	padding: 0;
+	border: none;
+	outline: none;
+}
+.topmenu li {
+	list-style: none;
+}
+
+/* Layout & Style */
+
+.topmenu li > a {
+	display: block;
+	position: relative;
+	min-width: 110px;
+	padding: 0 10px 0 0px;
+	text-align: center;
+	height: 54px;
+	color: #914467;
+	font: bold 20px/54px Arial, sans-serif;
+	text-decoration: none;
+	text-shadow: 0px 1px 0px rgba(0,0,0, .35);
+	background-color: #FCF094;
+}
+.topmenu > li:hover > a,
+.topmenu > li:target > a {
+	color: #ffffee;
+	text-shadow: 1px 1px 1px rgba(255,255,255, .2);
+	background-color: #914467;
+}
+
+/* Images */
+
+.topmenu > li > a:before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	content: '';
+	width: 24px;/*
+	height: 240px;*/
+}
+.topmenu li.O_nas > a:before { background-position: 0px 0px; }
+.topmenu li.O_nas:hover > a:before,
+.topmenu li.O_nas:target > a:before { background-position: 0px -24px; }
+.topmenu li.Oferta > a:before { background-position: -24px 0px; }
+.topmenu li.Oferta:hover > a:before,
+.topmenu li.Oferta:target > a:before { background-position: -24px -24px; }
+.topmenu li.Rezerwacja > a:before { background-position: -48px 0px; }
+.topmenu li.Rezerwacja:hover > a:before,
+.topmenu li.Rezerwacja:target > a:before { background-position: -48px -24px; }
+.topmenu li.Galeria > a:before { background-position: -72px 0px; }
+.topmenu li.Galeria:hover > a:before,
+.topmenu li.Galeria:target > a:before { background-position: -72px -24px; }
+
+/* Sub Menu */
+
+.sub-menu li a {
+	height: 32px;
+	font: bold 18px/32px Arial, sans-serif;
+	text-decoration: none;
+	color: #914467;
+	font-size: 18px;
+	text-shadow: 1px 1px 0px rgba(255,255,255, .2);
+	background: #ffffee;
+	border-bottom: 1px solid #c9c9c9;
+}
+.sub-menu li:hover a { 
+	background: #914467;
+	color: #ffffee;
+	text-shadow: 1px 1px 0px rgba(255,255,255, .2);
+}
+.sub-menu li:last-child a { border: none; }
+
+/* Functionality */
+.topmenu li > .sub-menu {
+	height: 0;
+	overflow: hidden;
+	-webkit-transition: height .3s ease-in-out;
+	-moz-transition: height .3s ease-in-out;
+	-o-transition: height .3s ease-in-out;
+	-ms-transition: height .3s ease-in-out;
+	transition: height .3s ease-in-out;
+}
+.topmenu li:hover > .sub-menu {
+	height: 96px;
+}
+
+
+/*Inne */
+
+.topmenu ul{
+	transition: opacity 0.5s ease 0s;
+	visibility: hidden;
+}
+.topmenu li:hover > ul{
+    opacity: 1;
+    visibility: visible;
+}
+
+
+.topmenu input {
+	position: absolute;
+	z-index: 1000;
+	width: 120px;
+	height: 40px;
+	left: 0px;
+	top: 0px;
+	opacity: 0;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+	cursor: pointer;
+}
+.topmenu input#tab-2{
+	top: 40px;
+}
+.topmenu input#tab-3{
+	top: 80px;
+}
+.topmenu input#tab-4{
+	top: 120px;
+	}
+
+.topmenu input:hover + a {
+	background: #5ba4a4;
+}
+
+.topmenu a:first-of-type {
+    z-index: 4;
+}
+.topmenu input:checked + a {
+    background: #fff;
+	z-index: 6;
+}
