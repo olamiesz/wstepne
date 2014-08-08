@@ -180,15 +180,12 @@ html>body .stale{
 }
 .glowna{
 	margin-left: 5px;
+	margin-top: 0;
 	background-color: transparent;
 	height: auto;/*745px;*/
 }
-#historia{
-    margin: 0 auto;
-    padding: 0;
-    position: relative;
-    z-index: 10;
-}
+.glowna img{
+	top: 0;
 }
 .glowna p{
 }
@@ -212,43 +209,45 @@ html>body .stale{
     right: 0;
     transform: translate3d(0px, 0px, 0px);
     z-index: 1030;
-        border-width: 1px 0 0;
+    border-width: 1px 0 0;
     bottom: 0;
     margin-bottom: 0;
 } 
 #historia{
-	width: 100%;
-	height:450px;
+	width: 100.7%;
+	height:auto;
 	left: 0;
-	background-color: #914467;
-	margin-bottom: 350px;
-	top: 0;
+	margin-right: 0;
+	background-color: rgba(145, 68, 103, 0.6);
+	margin-top: 17.1%;
+	margin-bottom: 34.2%;
     padding: 0;
     position: relative;
     z-index: 10;
 }
 #historia p{
-	color:#ffffee;
+	color:Black;
 	font-size: 30px;
 	margin-top: 0;
-	padding-top: 100px;
+	padding-top: 8%;
+	padding-bottom: 8%;
 	padding-right: 100px;
 	padding-left: 100px;
 }
 #kontakt{
-	width: 100%;
-	height: 450px;
-	background-color: #914467;
-	margin-bottom: 350px;
+	width: 100.7%;
+	height: auto;
+	background-color: rgba(255, 255, 238, 0.6);
+	margin-bottom: 34.2%;
     padding: 0;
     position: relative;
     z-index: 10;
 }
 #kontakt p{
-	color:#ffffee;
+	color:Black;
 	font-size: 30px;
-	padding-top: 100px;
+	padding-top: 8%;
+	padding-bottom: 8%;
 	padding-right: 100px;
 	padding-left: 100px;
 }
-
