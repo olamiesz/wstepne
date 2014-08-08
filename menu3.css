@@ -166,13 +166,46 @@ body{
 	background-color: #bbdefa;
 	border-color: #bbdefa;
 	padding: 50px;
-	border-width: 80px;
 	height: 190px;
 	margin-top: 5px;
     box-shadow:15px 13px 10px -5px #6b6b6b;
 }
+.stale{
+	position: absolute;	
+	left: 5px;
+	width: 33%;
+	top: 8px;
+}
+html>body .stale{
+	position: fixed;
+}
 .glowna{
 	margin-left: 5px;
 background-color: #fff;
-	height: 745px;
+	height: 1500px;/*745px;*/
+}
+.foot{
+	background-color: Black;
+	color: #fff;
+	text-align: center;
+	height: 50px;
+	padding-top: 10px;
+}
+.navbar {
+    display: none;
+	border: 1px solid transparent;
+    margin-bottom: 20px;
+    min-height: 50px;
+    position: relative;
+}
+
+.navbar-fixed-bottom{
+	left: 0;
+    position: fixed;
+    right: 0;
+    transform: translate3d(0px, 0px, 0px);
+    z-index: 1030;
+        border-width: 1px 0 0;
+    bottom: 0;
+    margin-bottom: 0;
 }
