@@ -181,8 +181,11 @@ html>body .stale{
 }
 .glowna{
 	margin-left: 5px;
-background-color: #fff;
-	height: 1500px;/*745px;*/
+	background-color: #fff;
+	height: auto;/*745px;*/
+}
+.glowna p{
+	padding:10px;
 }
 .foot{
 	background-color: Black;
@@ -192,7 +195,6 @@ background-color: #fff;
 	padding-top: 10px;
 }
 .navbar {
-    display: none;
 	border: 1px solid transparent;
     margin-bottom: 20px;
     min-height: 50px;
@@ -208,4 +210,4 @@ background-color: #fff;
         border-width: 1px 0 0;
     bottom: 0;
     margin-bottom: 0;
-}
+} 
