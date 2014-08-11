@@ -1,5 +1,6 @@
 body{
     min-width: 960px;
+    /* bardzo fajny kawalek kdu ustawiajacy zdjecie w tle */
     background: url(4a24f6fc8e.jpg) no-repeat center center fixed;
 -webkit-background-size: cover;
 -moz-background-size: cover;
