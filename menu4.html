@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="menu4.css">
+</head>
+<body>
+
+	<div class="col-md-12" id="arrayTop" role="navigation">
+		<nav class="navbar navbar-default navbar-fixed-top" >
+  			<div class="container">
+  				<ul class="topmenu" id="topmenu">
+					<li><a title="O nas" href="#" style=""><b>O nas</b></a></li>
+					<li><a title="Oferta" href="#" style=""><b>Oferta</b></a></li>
+					<li><a title="Rezerwacja" href="#" style=""><b>Rezerwacja</b></a></li>
+					<li><a title="Galeria" href="#" style=""><b>Galeria</b></a>	</li>
+				</ul>
+  			</div>
+  		</nav>
+	</div>
+	<div class="scroller" id="pointerDown" onclick="arrayBottomGoDown()">
+		<div class="arrow">
+			<div class="pointerDown"></div>	
+			<!--<div class="pointerUp"></div>-->	
+		</div>
+	</div>
+	<div class="col-md-12" >
+		<div class="tlo"></div>
+	</div>
+	<div class="col-md-12" id="arrayBottom">
+		<div class="bottom_menu">
+			<table>
+				<tr>
+					<td><a title="Historia" href="#" style="">Historia</a></td>
+					<td><a title="Sanatorium" href="#" style="">Sanatorium</a></td>
+					<td><a title="Terminy" href="#" style="">Terminy</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><a title="Kontakt" href="#" style="">Kontakt</a></td>
+					<td><a title="Imprezy okolicznosciowe" href="#" style="">Imprezy okolicznosciowe</a></td>
+					<td><a title="Pokoje" href="#" style="">Pokoje</a></td>
+					<td><a>tutaj tez coś może być</a></td>
+				</tr>
+				<tr>
+					<td><a title="Okolica" href="#" style="">Okolica</a></td>
+					<td><a title="Turnusy" href="#" style="">Turnusy</a></td>
+					<td><a title="Cennik" href="#" style="">Cennik</a></td>
+					<td></td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	<div class="col-md-12">
+		<nav class="navbar navbar-default navbar-fixed-bottom" >
+			<div class="foot">
+				<p> To jest pasek footer, na ktorym sa rzeczy takie jak  FAG, mozliwe ze dostep do facebooka i google+ , ale co do nich jeszcze sie zastanawiamy </p>
+			</div>
+		</nav>
+	</div>
+</div>
+<script type="text/javascript">
+	//testowy alerts
+	/********************DEKLARACJE FUNKCJI ******************************/
+	function myFunction () {
+		alert("Nie krzywdz gepardkow!");
+	}
+	//ta funkcja powoduje przesuniecie tablicy spodniej
+	function arrayBottomGoDown(){
+		animate(
+			document.getElementById("arrayBottom"),
+			"top","px",endOfArrayTop(),moveArrayBottomBy(),6000
+			);
+		animate(
+			document.getElementById("arrayBottom"),
+			"opacity","",0,1,6000
+			);
+	}
+	// basic animation setup
+	function animate(elem,style,unit,from,to,time){
+		if(!elem) return;
+		var start = new Date().getTime(),
+		timer = setInterval( 
+			function(){
+			var step = Math.min ( 1,(new Date().getTime()-start)/ time);
+			elem.style[style] = (from+step*(to-from))+unit;
+			if(step==1) clearInterval(timer);
+			}
+			,25);
+		elem.style[style] = from+unit;
+	}
+	// ta funkcja zwraca wysokosc tablicy gornej
+	function endOfArrayTop(){
+		var endOfArray =  -1.0*document.getElementById("arrayBottom").offsetHeight;
+
+		return endOfArray;
+	}
+	//ta funkcja mowi jak daleko ma sie przesunac tabela spodnia
+	function moveArrayBottomBy(){
+		var moveBy = -1.0*document.getElementById("arrayTop").offsetHeight+document.getElementById("arrayTop").offsetHeight;
+		return moveBy;
+	}
+	// ta funkcja ustawia poczatkowe wartosci tabel z automatu
+	function setDisplayBegin(){
+		var heightOfArrayTop = document.getElementById("arrayTop").offsetHeight;
+		var heightOfBottomTop = document.getElementById("arrayBottom").offsetHeight;
+		document.getElementById("arrayBottom").style.bottom=1.0*heightOfBottomTop+"px";
+		document.getElementById("arrayBottom").style.opacity=0.5;
+	}
+
+
+
+
+
+
+	/**************WYWOLANIE FUNKCJI ********************************************/
+	setDisplayBegin();
+</script>
+</body>
+</html>
