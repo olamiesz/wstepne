@@ -1,5 +1,10 @@
 body{
     min-width: 960px;
+    background: url(4a24f6fc8e.jpg) no-repeat center center fixed;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
 }
 /* Odpowiadają za ustawienie górnego menu i paska footer */
 .navbar {
@@ -22,6 +27,7 @@ background-image: -moz-linear-gradient(top, #7A041D 17%, #BD314F 52%, #7A041D 89
 background-image: -webkit-linear-gradient(top, #7A041D 17%, #BD314F 52%, #7A041D 89%);
 background-image: -ms-linear-gradient(top, #7A041D 17%, #BD314F 52%, #7A041D 89%);
 background-image: linear-gradient(to top, #7A041D 17%, #BD314F 52%, #7A041D 89%);
+z-index: 1000;
 }
 .navbar-fixed-top, .navbar-fixed-bottom {
     left: 0;
@@ -156,17 +162,6 @@ background-image: linear-gradient(to top, #7A041D 17%, #A62D47 52%, #7A041D 89%)
     margin: 0 auto;
     position: relative;
     top: 17px;
-}
-.tlo {
-    width: 100%;
-    position: fixed;
-    left: 0;
-    margin-top: 60px;
-    right: 0;
-    height: 700px;
-    background-image: url('4a24f6fc8e.jpg');
-    background-size: 100%;
-    z-index: 1;
 }
 .bottom_menu {
     /*ustawiam tabele względem górnej krawędzi */
