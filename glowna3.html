@@ -1,37 +1,78 @@
 <!DOCTYPE html>
 <html>
 <head>
+
+	<meta charset="utf-8">
 	<title>CSS3 Accordion Menu</title>
 	<link media="screen" type="text/css" href="glowna3.css" rel="stylesheet">
+	<link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+	<link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+	<script>
+function initialize()
+{
+  var mapProp = {
+    center: new google.maps.LatLng(52.7815824,18.2502582),
+    zoom:12,
+    mapTypeId: google.maps.MapTypeId.ROADMAP
+  };
+  var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+}
+
+function loadScript()
+{
+  var script = document.createElement("script");
+  script.type = "text/javascript";
+  script.src = "http://maps.googleapis.com/maps/api/js?key=AIzaSyDY0kkJiTPVd2U7aTOAwhc9ySH6oHxOIYM&sensor=false&callback=initialize";
+  document.body.appendChild(script);
+}
+
+window.onload = loadScript;
+</script>
 </head>
 <body>
-	<div class="col-md-12">
-		<div class="mainpage">
-			<div id="main-historia" class="screen" width="alert(screen.width)" heigth="alert(screen.height)">
+	<div class="main-historia">
+		<div class="text">
 			<h1> Historia</h1>
+			<br>
+			<div style="width:50%;float:left;">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro aliquam eveniet atque voluptate. Sit quae suscipit fugiat, eum dolorem eligendi consequuntur? Esse dignissimos ducimus, quisquam perferendis, odit aliquam magni recusandae. Officia sint ad possimus totam itaque dolore doloremque fuga vel fugit, eaque odit ea ex commodi quam consequuntur numquam labore dolorum similique nisi! Magnam, similique quasi reprehenderit, ratione harum aspernatur? Amet voluptate culpa quas impedit rerum iure vitae laboriosam fuga iste, praesentium? Blanditiis velit error dolores culpa eos eaque, quo unde ad asperiores cupiditate nihil, facere! Error molestiae ad ex. Eaque laudantium dignissimos quas culpa facilis, in nulla cumque minima fugit laboriosam corrupti quod cupiditate odio distinctio non molestias perspiciatis. Tempora eveniet, similique a. Officia fugit ex dolores vitae error! Omnis iure sit ad aut, quod dicta enim est dolore quae ab adipisci natus, eligendi quo quos odio, consequuntur ea. Magni facere laborum laboriosam repellendus rem, eius ipsum id odio? Cupiditate numquam nisi quidem aut delectus sapiente, eum nulla qui voluptatem magnam a expedita sit minus, aperiam ullam facilis error. </p>
 			</div>
-			<div id="main-kontakt" class="screen">
-			<h1>Kontakt</h1>
-			</div>
-			<div id="main-okolica" class="screen">
-			<h1>Okolica</h1>
-			</div>
-			<div id="main-historia" class="screen">
-			<h1> Historia</h1>
+			<div style="width:50%;float:right;">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro aliquam eveniet atque voluptate. Sit quae suscipit fugiat, eum dolorem eligendi consequuntur? Esse dignissimos ducimus, quisquam perferendis, odit aliquam magni recusandae. Officia sint ad possimus totam itaque dolore doloremque fuga vel fugit, eaque odit ea ex commodi quam consequuntur numquam labore dolorum similique nisi! Magnam, similique quasi reprehenderit, ratione harum aspernatur? Amet voluptate culpa quas impedit rerum iure vitae laboriosam fuga iste, praesentium? Blanditiis velit error dolores culpa eos eaque, quo unde ad asperiores cupiditate nihil, facere! Error molestiae ad ex. Eaque laudantium dignissimos quas culpa facilis, in nulla cumque minima fugit laboriosam corrupti quod cupiditate odio distinctio non molestias perspiciatis. Tempora eveniet, similique a. Officia fugit ex dolores vitae error! Omnis iure sit ad aut, quod dicta enim est dolore quae ab adipisci natus, eligendi quo quos odio, consequuntur ea. Magni facere laborum laboriosam repellendus rem, eius ipsum id odio? Cupiditate numquam nisi quidem aut delectus sapiente, eum nulla qui voluptatem magnam a expedita sit minus, aperiam ullam facilis error. </p>
 			</div>
 		</div>
 	</div>
-	<script type="text/javascript">
-alert(screen.width);
-alert(screen.height);
-</script>
-<script type="text/javascript">
-document.cookie = 'resolution=' + screen.width + 'x' + screen.height;
-</script>
-<?php
-<script type="text/javascript">
-document.cookie = 'resolution=' + screen.width + 'x' + screen.height;
-</script>
-?>
+	<div class="main-kontakt">
+		<div class="text">
+			<h1>Kontakt</h1>
+			<br>
+			<div class="col-md-4">
+				<center><a href="mailto:olamiesz@gmail.com"><i class="icon-envelope icon-4x"></i></a>
+				<p>Wyslij wiadomosc do:<br> <a href="mailto:olamiesz@gmail.com">Aleksandra Mieszkowska</a></p></center>
+				<br>
+			</div>
+			<div class="col-md-4">
+				<center><a href="skype:użytkownik?call"><i class="icon-phone icon-4x"></i></a>
+				<p>Telefony kontaktowe:
+				<br>
+				<a href="skype:użytkownik?call">+48 608 467 707</a></p></center>
+				<br>
+			</div>
+			<div class="col-md-4">
+				<center><span class="icon-location-arrow icon-4x"></span>
+				<p>Adres osrodka:
+				<br>
+				Innowroclaw ilestam</p></center>
+				<br>
+			</div>
+		</div>
+	</div>
+	<div class="main-okolica">
+		<div class="text">
+			<h1>Okolica</h1>
+			<br>
+			<center><div id="googleMap" style="width:600px;height:480px;"></div></center>
+		</div>
+	</div>
 </body>
 </html>

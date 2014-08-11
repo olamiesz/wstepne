@@ -1,34 +1,123 @@
-html {
-background: url(4a24f6fc8e.jpg) no-repeat center center fixed;
--webkit-background-size: cover;
--moz-background-size: cover;
--o-background-size: cover;
-background-size: cover;
+
+html, body { 
+	height: 100%; 
+	min-height: 640px;
 }
 body {
-	background-color: yellow;
-	height: 100%;
+	position: relative;
 }
-.mainpage {
-	background-color: green;
-	min-height: 100%;
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+    min-height: 1px;
+    position: relative;
+}
+@media (min-width: 992px) {
+.col-md-1, 
+.col-md-2, 
+.col-md-3, 
+.col-md-4, 
+.col-md-5, 
+.col-md-6, 
+.col-md-7,
+.col-md-8, 
+.col-md-9, 
+.col-md-10, 
+.col-md-11, 
+.col-md-12 {
+    float: left;
+}
+.col-md-12 {
+    width: 100%;
+}
+.col-md-11 {
+    width: 91.6667%;
+}
+.col-md-10 {
+    width: 83.3333%;
+}
+.col-md-9 {
+    width: 75%;
+}
+.col-md-8 {
+    width: 66.6667%;
+}
+.col-md-7 {
+    width: 58.3333%;
+}
+.col-md-6 {
+    width: 50%;
+}
+.col-md-5 {
+    width: 41.6667%;
+}
+.col-md-4 {
+    width: 33.3333%;
+}
+.col-md-3 {
+    width: 25%;
+}
+.col-md-2 {
+    width: 16.6667%;
+}
+.col-md-1 {
+    width: 8.33333%;
+}
+}
+.main-historia {
 	min-width: 960px;
-	margin: 0 auto;
+    background-color: rgb(122, 4, 29);
+    border-radius: 16px;
+    height: 99%;
+    color: rgb(255, 247, 178);
+    position: relative;
+    margin-bottom: 1%;
 }
-#main-historia {
-	background-color: #fff;
+.main-kontakt{
+	min-width: 960px;
+    background-color: rgb(255, 247, 178);
+    border-radius: 16px;
+    height: 98%;
+    color: rgb(122, 4, 29);
+    position: relative;
+    margin-top: 1%;
+    margin-bottom: 1%;
 }
-#main-kontakt {
-	width: 100%;
-	min-height: 100%;
-	background-color: #ff0000;
+.main-okolica {
+	min-width: 960px;
+    background-color: rgb(122, 4, 29);
+    border-radius: 16px;
+    height: 98%;
+    color: rgb(255, 247, 178);
+    position: relative;
+    margin-top: 1%;
+    margin-bottom: 1%;
 }
-#main-okolica {
-	width: 100%;
-	min-height: 100%;
-	background-color: Black;
-	color: #fff;
+.text {
+	width: 85%;
+	border: 3px solid transparent ;
+	margin:0 auto;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+ 	transform: translate(-50%, -50%);
 }
-.screen {
-	min-height: 100%;
+.text h1 {
+	text-align: center;
+	font-size: 42px;
+}
+.text p {
+	font-size: 18px;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+.text a{
+	color:#7a041d;
+}
+.text a:hover,
+.text a:active {
+	color:#9c4557;	
+	text-decoration: none;
+}
+#googleMap{	
+	border: 8px solid #9c4557;
+	border-radius: 16px;
 }
