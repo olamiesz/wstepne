@@ -7,27 +7,7 @@
 	<link media="screen" type="text/css" href="glowna3.css" rel="stylesheet">
 	<link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
 	<link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
-	<script>
-function initialize()
-{
-  var mapProp = {
-    center: new google.maps.LatLng(52.7815824,18.2502582),
-    zoom:12,
-    mapTypeId: google.maps.MapTypeId.ROADMAP
-  };
-  var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
-}
 
-function loadScript()
-{
-  var script = document.createElement("script");
-  script.type = "text/javascript";
-  script.src = "http://maps.googleapis.com/maps/api/js?key=AIzaSyDY0kkJiTPVd2U7aTOAwhc9ySH6oHxOIYM&sensor=false&callback=initialize";
-  document.body.appendChild(script);
-}
-
-window.onload = loadScript;
-</script>
 </head>
 <body>
 	<div class="main-historia">
@@ -74,5 +54,26 @@ window.onload = loadScript;
 			<center><div id="googleMap" style="width:600px;height:480px;"></div></center>
 		</div>
 	</div>
+		<script>
+function initialize()
+{
+  var mapProp = {
+    center: new google.maps.LatLng(52.7815824,18.2502582),
+    zoom:12,
+    mapTypeId: google.maps.MapTypeId.ROADMAP
+  };
+  var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+}
+
+function loadScript()
+{
+  var script = document.createElement("script");
+  script.type = "text/javascript";
+  script.src = "http://maps.googleapis.com/maps/api/js?key=AIzaSyDY0kkJiTPVd2U7aTOAwhc9ySH6oHxOIYM&sensor=false&callback=initialize";
+  document.body.appendChild(script);
+}
+
+window.onload = loadScript;
+</script>
 </body>
 </html>
