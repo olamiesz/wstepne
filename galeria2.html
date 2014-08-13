@@ -12,31 +12,37 @@
 </head>
 <body>
 	<div class="main-galeria">
-		<div class="text">
+		<div class="text_galeria">
 			<h1> Galeria</h1>
 			<br>
-			<div class="grid" >
+			<div class="galeria">
+			<ul class="grid" >
+				<li>
 				<a href="#" data-path-hover="m 0,0 0,117.7775 c 24.580441,3.12569 55.897012,-8.199417 90,-8.199417 34.10299,0 65.41956,11.325107 90,8.199417 L 180,0 z">
 					<figure>
 						<img src="solanki_1/DSC_0088.JPG" />
 						<svg viewBox="0 40 180 320" preserveAspectRatio="none">
-							<path d="m 0,0 0,171.14385 c 24.580441,15.47138 55.897012,24.75772 90,24.75772 34.10299,0 65.41956,-9.28634 90,-24.75772 L 180,0 0,0 z"/></svg>
+							<path d="m 0,0 0,171.14385 c 24.580441,15.47138 55.897012,24.75772 90,24.75772 34.10299,0 65.41956,-9.28634 90,-24.75772 L 180,0 0,0 z"></path></svg>
 						<figcaption>
 							<h2><b>Okolica</b></h2>							
 							<button><p>Zobacz zdjecia</p></button>
 						</figcaption>
 					</figure>
 				</a>
+				</li>
+				<li>
 				<a href="#" data-path-hover="m 0,0 0,117.7775 c 24.580441,3.12569 55.897012,-8.199417 90,-8.199417 34.10299,0 65.41956,11.325107 90,8.199417 L 180,0 z">
 					<figure>
 						<img src="solanki_2/DSC_0002.JPG" />
-						<svg viewBox="0 40 180 320" preserveAspectRatio="none"><path d="m 0,0 0,171.14385 c 24.580441,15.47138 55.897012,24.75772 90,24.75772 34.10299,0 65.41956,-9.28634 90,-24.75772 L 180,0 0,0 z"></path>		</svg>
+						<svg viewBox="0 40 180 320" preserveAspectRatio="none"><path d="m 0,0 0,171.14385 c 24.580441,15.47138 55.897012,24.75772 90,24.75772 34.10299,0 65.41956,-9.28634 90,-24.75772 L 180,0 0,0 z"></path></svg>
 						<figcaption>
 							<h2><b>Budowa</b></h2>
 							<button><p>Zobacz zdjecia</p></button>
 						</figcaption>
 					</figure>
 				</a>
+				</li>
+				<li>
 				<a href="#" data-path-hover="m 0,0 0,117.7775 c 24.580441,3.12569 55.897012,-8.199417 90,-8.199417 34.10299,0 65.41956,11.325107 90,8.199417 L 180,0 z">
 					<figure>
 						<img src="solanki_3/DSC_0038.jpg" />
@@ -46,7 +52,9 @@
 							<button><p>Zobacz zdjecia</p></button>
 						</figcaption>
 					</figure>
-				</a>	
+				</a>
+				</li>
+				</ul>	
 			</div>
 		</div>
 	</div>
@@ -57,7 +65,7 @@
 					var speed = 330,
 						easing = mina.backout;
 
-					[].slice.call ( document.querySelectorAll( '.grid > a' ) ).forEach( function( el ) {
+					[].slice.call ( document.querySelectorAll( '.grid > li > a' ) ).forEach( function( el ) {
 						var s = Snap( el.querySelector( 'svg' ) ), path = s.select( 'path' ),
 							pathConfig = {
 								from : path.attr( 'd' ),

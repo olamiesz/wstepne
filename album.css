@@ -71,7 +71,7 @@ body {
     color:rgb(122, 4, 29); 
     margin-bottom: 1%;
 }
-.text_galeria {
+.text_album {
     width: 85%;
     border: 3px solid transparent ;
     margin:0 auto;
@@ -79,21 +79,21 @@ body {
     left: 50%;
 
 }
-.text_galeria h1 {
+.text_album h1 {
     text-align: center;
     padding-top: 30px;
     font-size: 42px;
 }
-.text_galeria p {
+.text_album p {
     font-size: 18px;
     padding-right: 15px;
     padding-left: 15px;
 }
-.text_galeria a{
+.text_album a{
     color:#7a041d;
 }
-.text_galeria a:hover,
-.text_galeria a:active {
+.text_album a:hover,
+.text_album a:active {
     color:#9c4557;  
     text-decoration: none;
 }
