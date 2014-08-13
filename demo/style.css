@@ -1,0 +1,124 @@
+@font-face {
+    font-family: 'BebasRegular';
+    src: url('../BEBAS___-webfont.eot');
+    src: url('../BEBAS___-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../BEBAS___-webfont.woff') format('woff'),
+         url('../BEBAS___-webfont.ttf') format('truetype'),
+         url('../BEBAS___-webfont.svg#BebasRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+	padding: 0;
+	background: url('background.gif');
+	margin: 0;
+}
+
+#images-box {
+	/* Ca³owita szerokoœæ okienka ze zdjêciami */
+	width: 850px;
+	margin: 0px auto;
+	position: relative;
+	top: 70px;
+}
+
+.image-lightbox img {
+	/* Dziedziczenie szerokoœci i wysokoœci od g³ównego elementu */
+	width: inherit;
+	height: inherit;
+	z-index: 3000;
+}
+
+.holder {
+	/* wysokoœæ i szerokoœæ mo¿na zmieniæ */
+	width: 250px;
+	height: 166px;
+	float: left;
+	margin: 0 20px 0 0;
+}
+
+.image-lightbox {
+	/* Dziedziczenie szerokoœci i wysokoœci z .holder */
+	width: inherit;
+	height: inherit;
+	padding: 10px;
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+	background: #fff;
+	border-radius: 5px;
+	position: absolute;
+	top: 0;
+	font-family: Arial, sans-serif;
+	/* Przejœcia */
+	-webkit-transition: all ease-in 0.5s;
+	-moz-transition: all ease-in 0.5s;
+	-ms-transition: all ease-in 0.5s;
+	-o-transition: all ease-in 0.5s;
+}
+/* Po to zeby krzyzyk byl ukryty */
+.image-lightbox span {
+	display: none;
+}
+
+.image-lightbox .expand {
+	width: 100px;
+	height: 50px;
+	position: absolute;
+	top: 0;
+	z-index: 4000;
+	background: rgba(0,0,0,0); /* naprawia b³¹d w IE */
+	left: 0;
+}
+.image-lightbox article p{
+	color:#ff0000;
+	width: 100px;
+	height: 50px;
+		top: 0;
+		left: 0;
+	z-index: 5000;
+}
+.image-lightbox .close {
+	position: absolute;
+	width: 20px; height: 20px;
+	right: 20px; top: 20px;
+}
+
+.image-lightbox .close a {
+	height: auto; width: auto;
+	padding: 5px 10px;
+	color: #fff;
+	text-decoration: none;
+	background: #22272c;
+	box-shadow: inset 0px 24px 20px -15px rgba(255, 255, 255, 0.1), inset 0px 0px 10px rgba(0,0,0,0.4), 0px 0px 30px rgba(255,255,255,0.4);
+	border-radius: 5px;
+	font-weight: bold;
+	float: right;
+}
+
+.image-lightbox .close a:hover {
+	box-shadow: inset 0px -24px 20px -15px rgba(255, 255, 255, 0.01), inset 0px 0px 10px rgba(0,0,0,0.4), 0px 0px 20px rgba(255,255,255,0.4);
+}
+
+div[id^=image]:target {
+	width: 450px;
+	height: 300px;
+	z-index: 5000;
+	top: 50px;
+	left: 200px;
+}
+div[id^=image]:target .close {
+	display: block;
+}
+
+div[id^=image]:target .expand {
+	display: none;
+}
+
+div#image-1:target, div#image-2:target, div#image-3:target { left: 200px; }
+
+div#image-1 { left: 10; }
+div#image-2 { left: 290px; }
+div#image-3 { left: 580px; }
+
+
