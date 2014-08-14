@@ -57,8 +57,7 @@ body {
 .da-thumbs li  article i {
     color:rgb(122, 4, 29);
     width: 50px;
-    padding:20px;
-    margin: 50px auto;
+    margin: 35px auto;
     display:block;
     z-index: 4000;
 }
@@ -106,7 +105,7 @@ text-align:center;
 .text .album {
     overflow: auto;
     float: left;
-    width: 34%;
+    width: 24%;
     height:75%;
     background-color: rgb(122, 4, 29);
     border:6px solid transparent;
@@ -114,11 +113,12 @@ text-align:center;
 }
 .text .photo {
     float: right;
-    width: 63%;
+    width: 73%;
     height:75%;
     background-color: rgb(122, 4, 29);
     border:6px solid transparent;
     border-radius: 16px;
+    position: relative;
 }
 .portfolio {
     margin: 5px 1px;
@@ -129,14 +129,16 @@ text-align:center;
 .portfolio li{
     display: inline-block;
     position: relative;
-    width: 250px;
+    width: 150px;
     overflow: hidden;
     margin-left: 5px;
     margin-right: 5px;
     margin-bottom: 5px;
+    border:6px solid transparent;
+    border-radius: 16px;
 }
 .portfolio img {
-    width: 240px;
+    width: 140px;
     display: inline-block;
     position: relative;
     border: 5px solid #9c4557;
@@ -162,25 +164,31 @@ div#image-2 { left: 290px; }
 div#image-3 { left: 580px; }
 
 
-.lightbox {
+.text .photo .lightbox {
   /** Hide the lightbox */
 
   /** Apply basic lightbox styling */
   z-index: 1002;
   text-align: center;
+  position: relative;
+  margin: 0 auto;
   width: 95%;
   height:100%;
-  margin: 0 auto;
 }
 
 .lightbox img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   /** Pad the lightbox image */
-  width: 85%;
-  max-height: 97%;
-  margin:3% auto;
+  height: auto;
+  width: 90%;
+  max-width: 840px;
+  min-width:570px;
+  min-height: 385px;
   border: 5px solid #9c4557;
   border-radius: 16px;
-  vertical-align: middle;
 }
 
 .lightbox:target {
