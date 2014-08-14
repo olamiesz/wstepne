@@ -100,6 +100,16 @@ body {
     position: relative;
     margin-bottom: 1%;
 }
+
+.main-album{
+    min-width: 960px;
+    background-color: rgb(255, 247, 178);
+    border-radius: 16px;
+    height: 99%;
+    color:rgb(122, 4, 29);
+    position: relative;
+    margin-bottom: 1%;
+}
 .text {
 	width: 85%;
 	border: 3px solid transparent ;

@@ -53,14 +53,14 @@ body {
 .da-slideLeft {
 	left: 0px;
 }
-.da-thumbs li  article a {
-	color:#fff;
-	width: 50px;
-	padding:20px;
-	margin: 50px auto;
-	display:block;
+
+.da-thumbs li  article i {
+    color:rgb(122, 4, 29);
+    width: 50px;
+    padding:20px;
+    margin: 50px auto;
+    display:block;
     z-index: 4000;
-    background: rgba(0,0,0,0); /* naprawia b³¹d w IE */
 }
 
 .da-thumbs {
@@ -71,45 +71,57 @@ text-align:center;
 	min-width: 960px;
     background-color: rgb(255, 247, 178);
     border-radius: 16px;
-    height: auto;
-    min-height: 99%;
-    color:rgb(122, 4, 29); 
+    height: 99%;
+    color:rgb(122, 4, 29);
+    position: relative;
     margin-bottom: 1%;
 }
-.text_album {
+.text {
     width: 85%;
     border: 3px solid transparent ;
     margin:0 auto;
+    position: absolute;
+    height: 80%;
     top: 50%;
     left: 50%;
-
+    transform: translate(-50%, -50%);
 }
-.text_album h1 {
+.text h1 {
     text-align: center;
-    padding-top: 30px;
     font-size: 42px;
 }
-.text_album p {
+.text p {
     font-size: 18px;
     padding-right: 15px;
     padding-left: 15px;
 }
-.text_album a{
+.text a{
     color:#7a041d;
 }
-.text_album a:hover,
-.text_album a:active {
+.text a:hover,
+.text a:active {
     color:#9c4557;  
     text-decoration: none;
 }
-.album {
-    overflow: hidden;
-    position: relative;
-    width: 100%;
+.text .album {
+    overflow: auto;
+    float: left;
+    width: 34%;
+    height:75%;
+    background-color: rgb(122, 4, 29);
+    border:6px solid transparent;
+    border-radius: 16px;
 }
-
+.text .photo {
+    float: right;
+    width: 63%;
+    height:75%;
+    background-color: rgb(122, 4, 29);
+    border:6px solid transparent;
+    border-radius: 16px;
+}
 .portfolio {
-    margin: 0 ;
+    margin: 5px 1px;
     padding-left: 0;
     text-align: center;
     position: relative;
@@ -129,7 +141,9 @@ text-align:center;
     position: relative;
     border: 5px solid #9c4557;
     border-radius: 16px;
-}div[id^=image]:target {
+}
+
+div[id^=image]:target {
     width: 450px;
     height: 300px;
     z-index: 5000;
@@ -147,19 +161,33 @@ div#image-1 { left: 0; }
 div#image-2 { left: 290px; }
 div#image-3 { left: 580px; }
 
-.image-lightbox {
-    /* Dziedziczenie szerokoœci i wysokoœci z .holder */
-    width: inherit;
-    height: inherit;
-    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
-    background: #fff;
-    border-radius: 16px;
-    position: absolute;
-    top: 0;
-    font-family: Arial, sans-serif;
-    /* Przejœcia */
-    -webkit-transition: all ease-in 0.5s;
-    -moz-transition: all ease-in 0.5s;
-    -ms-transition: all ease-in 0.5s;
-    -o-transition: all ease-in 0.5s;
+
+.lightbox {
+  /** Hide the lightbox */
+
+  /** Apply basic lightbox styling */
+  z-index: 1002;
+  text-align: center;
+  width: 95%;
+  height:100%;
+  margin: 0 auto;
 }
+
+.lightbox img {
+  /** Pad the lightbox image */
+  width: 85%;
+  max-height: 97%;
+  margin:3% auto;
+  border: 5px solid #9c4557;
+  border-radius: 16px;
+  vertical-align: middle;
+}
+
+.lightbox:target {
+  /** Show lightbox when it is target */
+  display: block;
+
+  /** Remove default browser outline style */
+  outline: none;
+}
+
