@@ -1,0 +1,140 @@
+html, body { 
+  height: 100%; 
+  min-height: 640px;
+}
+body {
+  position: relative;
+}
+
+img {
+  border: 0px;
+  padding: 0px;
+}
+
+.main-album{
+  min-width: 960px;
+    background-color: rgb(255, 247, 178);
+    border-radius: 16px;
+    height: 99%;
+    color:rgb(122, 4, 29);
+    position: relative;
+    margin-bottom: 1%;
+}
+.text {
+    width: 85%;
+    border: 3px solid transparent ;
+    margin:0 auto;
+    position: absolute;
+    height: 80%;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.text h1 {
+    text-align: center;
+    font-size: 42px;
+}
+.text p {
+    font-size: 18px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.text a{
+    color:#7a041d;
+}
+.text a:hover,
+.text a:active {
+    color:#9c4557;  
+    text-decoration: none;
+}
+#gallery{
+	/* CSS3 Box Shadow */
+	box-shadow:0 0 3px #AAAAAA;
+	
+	/* CSS3 Rounded Corners */
+	
+	border-radius: 16px;
+	border:6px solid rgb(122, 4, 29);
+	background-color: rgb(122, 4, 29);
+	/* The width of the gallery */
+	width:920px;
+	overflow:hidden;
+}
+
+#slides{
+	/* This is the slide area */
+	height:500px;
+	
+	/* jQuery changes the width later on to the sum of the widths of all the slides. */
+	width:920px;
+	overflow:hidden;
+}
+
+.slide{
+	float:left;
+}
+
+#menu{
+	/* This is the container for the thumbnails */
+	height:45px;
+}
+
+ul{
+	margin:0px;
+	padding:0px;
+}
+
+li{
+	/* Every thumbnail is a li element */
+	width:60px;
+	display:inline-block;
+	list-style:none;
+	height:45px;
+	overflow:hidden;
+}
+li.act,li.act:hover{
+	/* The active state of the thumb */
+	background:url(img/active_bg.png) no-repeat;
+}
+
+	background-color: rgb(145, 68, 103);
+li.act a{
+	cursor:default;
+}
+
+.fbar{
+	/* The left-most vertical bar, next to the first thumbnail */
+	width:10px;
+}
+
+li a{
+	display:block;
+	height:35px;
+	padding-top:10px;
+}
+
+a img{
+	border:none;
+	width: 50px;
+}
+
+
+/* The styles below are only necessary for the demo page */
+
+#main{
+	/* The main container */
+	margin:15px auto;
+	text-align:center;
+	width:920px;
+	position:relative;
+}
+
+a, a:visited {
+	color:#0196e3;
+	text-decoration:none;
+	outline:none;
+}
+p{
+	padding:10px;
+	text-align:center;
+}
