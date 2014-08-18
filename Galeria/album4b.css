@@ -53,41 +53,30 @@ img {
 	border:6px solid rgb(122, 4, 29);
 	background-color: rgb(122, 4, 29);
 	/* The width of the gallery */
-	width:930px;
+	width:770px;
 	overflow:hidden;
 	margin:0 auto;
 	position: relative;
 }
-#gallery_area {
-	width: 760px;
-	float: right;
-	overflow:hidden;
-	border: 8px solid #9c4557;
-	border-radius: 16px;
-	margin-right: 3px;
-	margin-top: 3px;
-}
+
 #slides{
 	/* This is the slide area */
 	height:480px;
 	
 	/* jQuery changes the width later on to the sum of the widths of all the slides. */
-/*	overflow:hidden;*/
+	width:870px;
+	overflow:hidden;
 }
 
 .slide{
-	width:770px;
-	float:right;
+	float:left;
 }
 
 #menu{
 	/* This is the container for the thumbnails */
-	width:145px;
-	float: left;
+	height:45px;
+	overflow: hidden;
 	display: inline;
-	position: relative;
-	top: 0;
-	left: 0;
 }
 
 ul{
@@ -121,7 +110,7 @@ li.act a{
 li a{
 	display:block;
 	height:35px;
-	padding-top:5px;
+	padding-top:10px;
 }
 
 a img{
@@ -136,7 +125,7 @@ a img{
 	/* The main container */
 	margin:15px auto;
 	text-align:center;
-	width:930px;
+	width:770px;
 	position:relative;
 }
 
